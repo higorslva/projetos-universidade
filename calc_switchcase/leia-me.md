@@ -1,1 +1,1 @@
-Calculadora usando a funçõe "Switch Case"
+Calculadora usando a função "Switch Case"
