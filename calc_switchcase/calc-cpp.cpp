@@ -1,4 +1,6 @@
 //Higor Silva
+//Discente da turma de 2019 em Ciência da Computação - UNIFAP
+//Programação I
 //higors88@gmail.com
 //https://github.com/higorslva/hitech-lab/
 
@@ -20,7 +22,9 @@ int main ()
 
         cout << "Calculadora usando Switch Cases v1.0\n" << endl;
         cout << "Operações possíveis:\n\n";
-        cout << "[1] - Soma\n[2] - Subtração\n[3] - Multiplicação\n[4] - Divisão\n[5] - Raiz quadrada\n[6] - Raiz com base x\n[7] - Potência\n[8] - Raízes de uma função do segundo grau\n[9] - Derivada\n\n";
+        cout << "[1] - Soma | [2] - Subtração | [3] - Multiplição\n";
+        cout << "[4] - Divisão | [5] - Raiz quadrada | [6] - Raiz com base x\n";
+        cout << "[7] - Potência | [8] - Raízes de uma função do segundo grau | [9] - Derivada\n\n";
         cout << "Insira o número da operação que deseja: ";
         cin >> op;
 
@@ -66,7 +70,7 @@ int main ()
         {
             int der;
             cout << "Insira a regra da derivação\n";
-            cout << "[1] - Derivada de uma constante \n[2] - Derivada de uma potência (a^x)\n[3] - Derivada da funcão exponencial" << endl;
+            cout << "[1] - Derivada de uma constante \n[2] - Derivada de uma potência (a^x)\n[3] - Derivada da função exponencial" << endl;
             cin >> der;
 
             switch (der)
@@ -84,17 +88,17 @@ int main ()
                     cin >> b;
                     c = b - 1;
                     cout << "Derivar " << a << "^" << b << endl;
-                    cout << "Primeiro, passamos a potência '" << b <<"' multiplicando, ficando: " << b << " é " << a << endl;
-                    cout << "Agora, subtraimos -1 da potência. Como " << b << " - 1  é igual a " << c << ", então nos resta " << b << "×" << a << "^" << c << endl;
-                    cout << "A derivada de " << a << "^" << b << " é: " << b << "×" << a << "^" << c << endl;
+                    cout << "Primeiro, passamos a potência '" << b <<"' multiplicando, ficando: " << b << " * " << a << endl;
+                    cout << "Agora, subtraimos -1 da potência. Como " << b << " - 1  é igual a " << c << ", então nos resta " << b << "*" << a << "^" << c << endl;
+                    cout << "A derivada de " << a << "^" << b << " é: " << b << "*" << a << "^" << c << endl;
                     cout << "Em outras palavras, " << b * pow(a,c) << endl;
                     break;
 
                 case 3:
                     cout << "Insira a base: ";
                     cin >> a;
-                    cout << "A derivada da função exponencial é a^x × ln(a)" << endl;
-                    cout << "Logo, temos " << a << "^x × ln(" << a << ")" << endl;
+                    cout << "A derivada da função exponencial é a^x * ln(a)" << endl;
+                    cout << "Logo, temos " << a << "^x * ln(" << a << ")" << endl;
                     break;
 
                 default:
@@ -122,10 +126,10 @@ int main ()
                 cout << "\nA raiz quadrada de " << a << " = " << sqrt(a) << "\n" << endl;
                 break;
             case 6:
-                cout << "\nA raiz a " << b << " de " << a <<" é igual a: " << pow(a, 1/b) << "\n" << endl;
+                cout << "\nA raiz a " << b << "ª de " << a <<" é igual a: " << pow(a, 1/b) << "\n" << endl;
                 break;
             case 7:
-                cout << a << " elevado a " << b <<"é igual a: " << pow(a, b) << endl;
+                cout << a << "^" << b <<" = " << pow(a, b) << endl;
                 break;
             case 8:
                  cout << "Raíz x1: " << (-b+sqrt((b*b)-4*a*c))/(2*a) << endl;
