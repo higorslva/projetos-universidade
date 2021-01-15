@@ -11,15 +11,38 @@
 
 using namespace std;
 
+void RaizesEquacao(){
+    float a, b, c;
+    cout << "Calcular raízes de equações 'ax²+bx+c=0'\n";
+    cout << "Caso o resultado mostre 'nan', as raízes não existem para essa função" << endl;
+    cout << "Insira o valor de a: ";
+    cin >> a;
+    cout << "Insira o valor de b: ";
+    cin >> b;
+    cout << "Insira o valor de c: ";
+    cin >> c;
+}
+void RaizQuadrada(){
+    float a;
+    cout << "Insira o valor para achar a raiz quadrada: ";
+    cin >> a;
+    cout << "\nA raiz quadrada de " << a << " = " << sqrt(a) << "\n" << endl;
+}
+void RaizBaseX(){
+    float a, b;
+    cout << "Insira o valor para achar a raiz: ";
+    cin >> a;
+    cout << "Insira o valor a dividir a raiz: ";
+    cin >> b;
+    cout << "\nA raiz a " << b << "ª de " << a <<" é igual a: " << pow(a, 1/b) << "\n" << endl;
+}
 int main ()
 {
     while (true)
     {
         setlocale (LC_ALL, "Portuguese");
-
-        float a, b, c;
         int op;
-
+        float a, b, c;
         cout << "Calculadora usando Switch Cases v1.0\n" << endl;
         cout << "Operações possíveis:\n\n";
         cout << "[1] - Soma | [2] - Subtração | [3] - Multiplição\n";
@@ -30,26 +53,15 @@ int main ()
 
         if (op == 8)
         {
-            cout << "Calcular raízes de equações 'ax²+bx+c=0'\n";
-            cout << "Caso o resultado mostre 'nan', as raízes não existem para essa função" << endl;
-            cout << "Insira o valor de a: ";
-            cin >> a;
-            cout << "Insira o valor de b: ";
-            cin >> b;
-            cout << "Insira o valor de c: ";
-            cin >> c;
+            RaizesEquacao();
         }
         if (op == 5)
         {
-            cout << "Insira o valor para achar a raiz quadrada: ";
-            cin >> a;
+            RaizQuadrada();
         }
         if (op == 6)
         {
-            cout << "Insira o valor para achar a raiz: ";
-            cin >> a;
-            cout << "Insira o valor a dividir a raiz: ";
-            cin >> b;
+            RaizBaseX();
         }
 
         if (op <= 4)
@@ -122,11 +134,9 @@ int main ()
             case 4:
                 cout << a << " / " << b << " = " << a / b << endl;
                 break;
-            case 5:
-                cout << "\nA raiz quadrada de " << a << " = " << sqrt(a) << "\n" << endl;
-                break;
+            
             case 6:
-                cout << "\nA raiz a " << b << "ª de " << a <<" é igual a: " << pow(a, 1/b) << "\n" << endl;
+               
                 break;
             case 7:
                 cout << a << "^" << b <<" = " << pow(a, b) << endl;
