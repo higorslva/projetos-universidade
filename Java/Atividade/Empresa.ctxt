@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=quantidade
+comment0.target=Empresa(int)
+comment1.params=f
+comment1.target=void\ adiciona(Funcionario)
+numComments=2
