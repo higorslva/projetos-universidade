@@ -13,8 +13,7 @@ public class Administrativo extends Funcionario{
     public void informarHorasExtras(){
         System.out.println("Horas extras trabalhadas: " + this.horas_extras);
     }
-    double comissao = (getSalarioBase()*0.01)*this.horas_extras;
-
+   
     public void comissao(){
         System.out.println("Comissão: " + getSalarioBase()*0.01*this.horas_extras);
     }
