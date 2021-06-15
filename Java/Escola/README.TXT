@@ -1,0 +1,22 @@
+----------------------------------------------------------------------------------------------
+CADASTRO v1.1 Stable
+----------------------------------------------------------------------------------------------
+
+TÍTULO DO PROJETO: Escola (Projeto final Programaçao III)
+OBJETIVO DO PROJETO: Sistema de cadastro em uma escola
+DATA DA BUILD: 15 - Jun - 2021
+AUTORES: Higor Silva (https://github.com/higorslva)
+CHANGES:
+    - Agora usa interface Javax.Swing inves de "System.out.println". Consequentemente,
+    agora e possivel usar sem terminal
+    - Adicionado no menu uma opçao para limpar o "relatorio.txt"
+    - Corrigido o erro ao nao cadastrar nenhum aluno ao finalizar o programa. Foi adicionado
+    um tratamento para "Media de idade dos alunos".
+
+----------------------------------------------------------------------------------------------
+CADASTRO v1.0 Stable
+----------------------------------------------------------------------------------------------
+TÍTULO DO PROJETO: Escola (Projeto final Programaçao III)
+OBJETIVO DO PROJETO: Sistema de cadastro em uma escola
+DATA DA BUILD: 09 - Jun - 2021
+AUTORES: Higor Silva (https://github.com/higorslva)
